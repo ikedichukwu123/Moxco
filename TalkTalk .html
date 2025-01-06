@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Social Media App</h1>
+  </header>
+  
+  <main class="main">
+    <section class="new-post">
+      <h2>Create a Post</h2>
+      <form id="postForm">
+        <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+    <section class="posts" id="posts">
+      <h2>Posts</h2>
+      <!-- Posts will appear here -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Post</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="post">
+    <h2 class="post-title">Social Media Post</h2>
+    <p class="post-content">This is an example of a social media post. You can share or comment below.</p>
+    <div class="post-actions">
+      <button class="share-btn" onclick="sharePost()">Share</button>
+      <button class="comment-btn" onclick="toggleCommentBox()">Comment</button>
+    </div>
+    <div class="comment-section" id="comment-section" style="display: none;">
+      <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+      <button class="submit-btn" onclick="submitComment()">Submit</button>
+      <ul id="comment-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok-Inspired Social Media</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="feed">
+    <div class="video-container">
+      <video src="video1.mp4" class="video" autoplay loop muted></video>
+      <div class="video-actions">
+        <button class="like-btn">❤️ Like</button>
+        <button class="comment-btn">💬 Comment</button>
+        <button class="share-btn">📤 Share</button>
+      </div>
+    </div>
+    <div class="video-container">
+      <video src="video2.mp4" class="video" autoplay loop muted></video>
+      <div class="video-actions">
+        <button class="like-btn">❤️ Like</button>
+        <button class="comment-btn">💬 Comment</button>
+        <button class="share-btn">📤 Share</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-image">
+            <h1 class="profile-name">John Doe</h1>
+            <p class="profile-bio">Web Developer | Tech Enthusiast | Blogger</p>
+        </div>
+
+        <div class="profile-info">
+            <h2>Posts</h2>
+            <div class="post">
+                <p class="post-text">Had a great day coding! Learning new web technologies is always exciting. #coding #webdev</p>
+                <button class="like-button" onclick="likePost()">Like</button> <span id="like-count">0</span> Likes
+            </div>
+        </div>
+
+        <div class="footer">
+            <button onclick="showMessage()">Send Message</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Method</h1>
+        <p>Select your payment method through social media</p>
+
+        <div class="payment-options">
+            <button id="facebook" class="payment-btn">Pay with Facebook</button>
+            <button id="twitter" class="payment-btn">Pay with Twitter</button>
+            <button id="paypal" class="payment-btn">Pay with PayPal</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy and Sell Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Buy and Sell Products</h1>
+    <div id="cart">
+      <span>Cart: <span id="cartCount">0</span> items</span>
+    </div>
+  </header>
+  
+  <section class="product-list">
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$100</p>
+      <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$150</p>
+      <button onclick="addToCart('Product 2', 150)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product3.jpg" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>$200</p>
+      <button onclick="addToCart('Product 3', 200)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Buy and Sell Platform</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #chatContainer {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .group-list, .message-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .group, .message {
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="chatContainer">
+    <h2>Create Group</h2>
+    <input type="text" id="groupName" placeholder="Enter group name">
+    <button onclick="createGroup()">Create Group</button>
+
+    <h3>Available Groups</h3>
+    <ul id="groupList" class="group-list">
+      <!-- List of created groups will appear here -->
+    </ul>
+
+    <h3>Join Group</h3>
+    <input type="text" id="joinGroupName" placeholder="Enter group name to join">
+    <button onclick="joinGroup()">Join Group</button>
+
+    <h3>Group Chat</h3>
+    <div id="chatArea" style="display:none;">
+      <h4>Chat in <span id="currentGroup"></span></h4>
+      <ul id="messageList" class="message-list"></ul>
+      <input type="text" id="messageInput" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    let currentGroup = null;
+    let groups = [];
+    let currentMessages = [];
+
+    function createGroup() {
+      const groupName = document.getElementById('groupName').value;
+      if (groupName && !groups.includes(groupName)) {
+        groups.push(groupName);
+        updateGroupList();
+      }
+    }
+
+    function joinGroup() {
+      const groupName = document.getElementById('joinGroupName').value;
+      if (groups.includes(groupName)) {
+        currentGroup = groupName;
+        currentMessages = [];
+        document.getElementById('currentGroup').textContent = currentGroup;
+        document.getElementById('chatArea').style.display = 'block';
+        updateMessageList();
+      } else {
+        alert('Group not found!');
+      }
+    }
+
+    function sendMessage() {
+      const message = document.getElementById('messageInput').value;
+      if (message) {
+        currentMessages.push(message);
+        updateMessageList();
+        document.getElementById('messageInput').value = '';
+      }
+    }
+
+    function updateGroupList() {
+      const groupListElement = document.getElementById('groupList');
+      groupListElement.innerHTML = '';
+      groups.forEach(group => {
+        const li = document.createElement('li');
+        li.textContent = group;
+        groupListElement.appendChild(li);
+      });
+    }
+
+    function updateMessageList() {
+      const messageListElement = document.getElementById('messageList');
+      messageListElement.innerHTML = '';
+      currentMessages.forEach(msg => {
+        const li = document.createElement('li');
+        li.textContent = msg;
+        messageListElement.appendChild(li);
+      });
+    }
+  </script>
+  
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-card">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <h1 class="profile-name">John Doe</h1>
+            <p class="profile-bio">Web Developer | Tech Enthusiast | Blogger</p>
+            <button class="follow-btn">Follow</button>
+        </div>
+        <div class="social-media">
+            <div class="social-media-item" id="twitter">Twitter</div>
+            <div class="social-media-item" id="facebook">Facebook</div>
+            <div class="social-media-item" id="instagram">Instagram</div>
+            <div class="social-media-item" id="linkedin">LinkedIn</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html><ALOASK-SEPARATE-EDITORS>/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Main section */
+.main {
+  margin: 20px auto;
+  max-width: 600px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* New post form */
+.new-post h2 {
+  margin-bottom: 10px;
+}
+
+#postForm textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+#postForm button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#postForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Posts */
+.posts {
+  margin-top: 20px;
+}
+
+.post {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.post p {
+  margin: 0;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.post-content {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.share-btn,
+.comment-btn,
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.share-btn:hover,
+.comment-btn:hover,
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+#comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#comment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#comment-list li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-actions {
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-actions button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.video-actions button:hover {
+  transform: scale(1.2);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-header {
+    background-color: #3b5998;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.profile-header .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-header .profile-name {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.profile-header .profile-bio {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.post-text {
+    font-size: 14px;
+}
+
+.like-button {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-button:hover {
+    background-color: #2d4373;
+}
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stream-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+#chat {
+  background-color: #f9f9f9;
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#chat-input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#send-btn {
+  width: 18%;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background-color: #45a049;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.payment-btn:hover {
+    background-color: #45a049;
+}
+
+.message {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy and Sell Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Buy and Sell Products</h1>
+    <div id="cart">
+      <span>Cart: <span id="cartCount">0</span> items</span>
+    </div>
+  </header>
+  
+  <section class="product-list">
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$100</p>
+      <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$150</p>
+      <button onclick="addToCart('Product 2', 150)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product3.jpg" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>$200</p>
+      <button onclick="addToCart('Product 3', 200)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Buy and Sell Platform</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.profile-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 24px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: #666;
+}
+
+.follow-btn {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    background-color: #005bb5;
+}
+
+.social-media {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media-item {
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+#twitter:hover {
+    color: #1DA1F2;
+}
+
+#facebook:hover {
+    color: #4267B2;
+}
+
+#instagram:hover {
+    color: #E4405F;
+}
+
+#linkedin:hover {
+    color: #0077B5;
+}<ALOASK-SEPARATE-EDITORS>// Function to handle form submission
+document.getElementById('postForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent page reload
+
+  const postContent = document.getElementById('postContent').value;
+
+  if (postContent.trim()) {
+    // Create a new post element
+    const postElement = document.createElement('div');
+    postElement.className = 'post';
+    postElement.innerHTML = `<p>${postContent}</p>`;
+
+    // Add the post to the posts section
+    const postsContainer = document.getElementById('posts');
+    postsContainer.appendChild(postElement);
+
+    // Clear the textarea
+    document.getElementById('postContent').value = '';
+  }
+function sharePost() {
+  alert('Post shared successfully!');
+}
+
+function toggleCommentBox() {
+  const commentSection = document.getElementById('comment-section');
+  commentSection.style.display = commentSection.style.display === 'none' ? 'block' : 'none';
+}
+
+function submitComment() {
+  const commentInput = document.getElementById('comment-input');
+  const commentList = document.getElementById('comment-list');
+
+  if (commentInput.value.trim() !== '') {
+    const newComment = document.createElement('li');
+    newComment.textContent = commentInput.value;
+    commentList.appendChild(newComment);
+    commentInput.value = '';
+  } else {
+    alert('Please write a comment before submitting.');
+  }
+document.querySelectorAll('.like-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    alert('You liked the video!');
+  });
+});
+
+document.querySelectorAll('.comment-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Comment feature coming soon!');
+  });
+});
+
+document.querySelectorAll('.share-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    alert('You shared the video!');
+  });
+let likeCount = 0;
+
+function likePost() {
+    likeCount++;
+    document.getElementById("like-count").innerText = likeCount;
+}
+
+function showMessage() {
+    alert("Feature to send message coming soon!");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Stream</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stream-container">
+    <h1>Live Stream</h1>
+    <div class="video-container">
+      <video id="live-video" controls autoplay>
+        <source src="your-live-stream-url" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="chat-box">
+      <h2>Live Chat</h2>
+      <div id="chat"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html// Simple chat functionality
+document.getElementById("send-btn").addEventListener("click", function() {
+  let chatInput = document.getElementById("chat-input");
+  let chatBox = document.getElementById("chat");
+
+  if (chatInput.value.trim()) {
+    let newMessage = document.createElement("div");
+    newMessage.textContent = chatInput.value;
+    chatBox.appendChild(newMessage);
+    chatInput.value = ""; // Clear input
+    chatBox.scrollTop = chatBox.scrollHeight; // Scroll to latest message
+  }
+});
+
+// Auto-play live stream (adjust depending on stream source)
+let videoElement = document.getElementById('live-video');
+videoElement.addEventListener('error', function() {
+  alert('Error loading live stream. Please try again later.');
+document.getElementById('facebook').addEventListener('click', function() {
+    showMessage('You selected Pay with Facebook!');
+});
+
+document.getElementById('twitter').addEventListener('click', function() {
+    showMessage('You selected Pay with Twitter!');
+});
+
+document.getElementById('paypal').addEventListener('click', function() {
+    showMessage('You selected Pay with PayPal!');
+});
+
+function showMessage(message) {
+    const messageElement = document.getElementById('message');
+    messageElement.textContent = message;
+let cartCount = 0;
+
+function addToCart(productName, price) {
+  cartCount++;
+  document.getElementById('cartCount').textContent = cartCount;
+
+  alert(`${productName} has been added to your cart for $${price}`);
+// Change text color of social media items dynamically
+const socialMediaItems = document.querySelectorAll('.social-media-item');
+
+socialMediaItems.forEach(item => {
+    item.addEventListener('mouseover', function () {
+        item.style.color = 'green';
+    });
+    item.addEventListener('mouseout', function () {
+        item.style.color = '';
+    });
+});
